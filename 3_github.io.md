@@ -1,4 +1,40 @@
-### 样式站点选择
+### 二. 创建新用户及zsh+vim环境搭建
+
+
+
+```sh
+### 1.add user
+
+useradd ace
+
+mkdir /home/ace
+
+chown ace:ace /home/ace -R
+
+usermod -d /home/ace ace
+
+passwd ace
+
+### ! 切换用户
+
+su ace
+
+### 2. install zsh git 
+
+sudo apt install git zsh vim neovim
+
+### 3. 配置 ohmyzsh & spacevim
+
+curl -sLf https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash
+
+curl -sLf https://spacevim.org/install.sh | bash
+```
+
+
+
+
+
+### 三. 样式站点选择
 
 > https://github.com/Sathish2905/sample-website-templates
 
